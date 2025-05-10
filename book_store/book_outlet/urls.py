@@ -4,5 +4,5 @@ from .views import *
 
 urlpatterns = [
     path("", index, name='all-books'),
-    path("<int:id>", book_detail, name='book-detail')
+    path("<slug:slug>", book_detail, name='book-detail')
 ]
